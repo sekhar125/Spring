@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-4.3.xsd
+	http://www.springframework.org/schema/context
+	http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+	<context:annotation-config />
+
+	<bean id="address" class="com.javatpoint.Address">
+		<property name="addressLine1" value="Float No303,Fortune Nest"></property>
+		<property name="addressLine2" value="Friends colony,chandanagar"></property>
+		<property name="city" value="Hyderabad"></property>
+		<property name="pincode" value="500050"></property>
+		<!-- <constructor-arg value="Float No303,Fortune Nest" /> <constructor-arg 
+			value="Friends colony,chandanagar" /> <constructor-arg value="Hyderabad" 
+			/> <constructor-arg value="500032" /> -->
+	</bean>
+
+	<bean id="address1" class="com.javatpoint.Address">
+		<property name="addressLine1" value="CGI Pvt limited"></property>
+		<property name="addressLine2" value="DLF,Gawchibowli"></property>
+		<property name="city" value="Hyderabad"></property>
+		<property name="pincode" value="500032"></property>
+		<!-- <constructor-arg value="Float No303,Fortune Nest" /> <constructor-arg 
+			value="Friends colony,chandanagar" /> <constructor-arg value="Hyderabad" 
+			/> <constructor-arg value="500032" /> -->
+
+	</bean>
+
+	<bean id="studentbean" class="com.javatpoint.Student">
+		<!-- <constructor-arg value="Sekharbabu" type="String" /> <constructor-arg 
+			ref="address" type="com.javatpoint.Address" /> -->
+			 <property name="name" value="Thammuluri"></property>
+	</bean>
+</beans>
